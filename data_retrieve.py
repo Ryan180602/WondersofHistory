@@ -1,7 +1,7 @@
 import json
-import requests
-
 from datetime import date
+
+import requests
 import wikipedia as wiki
 
 eventlist=[]
@@ -13,6 +13,3 @@ def retrievefordm(month, day):
     print("Here's what happened on this day:")
     for event in response["events"]:
         eventlist.append(event["text"])
-    
-
-
